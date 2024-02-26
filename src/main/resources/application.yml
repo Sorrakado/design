@@ -21,7 +21,7 @@ spring:
 gitee:
   clientId: 38954671812ab3ca70fa8465a0f96aea81a1ab91589156add3391f9df7924106
   clientSecret: 62d560f81f4d45ac0ba4bf76a52701509547d80f6d75cc2bb4aae141f925e6e5
-  callBack: http://localhost:9999/gitee
+  callBack: http://localhost:9999/bridge/gitee
   state: GITEE
   user:
     prefix: ${gitee.state}@
