@@ -18,3 +18,14 @@ spring:
           auto: update
       dialect: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
+gitee:
+  clientId: 38954671812ab3ca70fa8465a0f96aea81a1ab91589156add3391f9df7924106
+  clientSecret: 62d560f81f4d45ac0ba4bf76a52701509547d80f6d75cc2bb4aae141f925e6e5
+  callBack: http://localhost:9999/gitee
+  state: GITEE
+  user:
+    prefix: ${gitee.state}@
+    url: https://gitee.com/api/v5/user?access_token=
+  token:
+    url: https://gitee.com/oauth/token?grant_type=authorization_code&client_id=${gitee.clientId}&redirect_uri=${gitee.callBack}&client_secret=${gitee.clientSecret}&code=
+

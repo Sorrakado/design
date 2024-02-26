@@ -9,6 +9,6 @@ public interface UserRepository extends JpaRepository<UserInfo,Integer> {
 
     UserInfo findByUserName(String username);
 
-    UserInfo findByUserNameAndUserPassword(String username, String password);
+    UserInfo findByUserNameAndUserPassword(String username, String userPassword);
 
 }
