@@ -23,6 +23,7 @@ public class AddItemVisitor implements ItemVisitor<AbstractProductItem> {
             currentItem.addProductItem(addItem);
             return currentItem;
         }
+        //递归寻找新类目的插入点
         addChild(addItem,currentItem);
         return currentItem;
     }

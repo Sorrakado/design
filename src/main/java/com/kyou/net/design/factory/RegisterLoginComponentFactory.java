@@ -1,4 +1,4 @@
-package com.kyou.net.design.config;
+package com.kyou.net.design.factory;
 
 import com.kyou.net.design.bridge.AbstractRegisterLoginComponent;
 import com.kyou.net.design.bridge.RegisterLoginComponent;

@@ -1,7 +1,7 @@
 package com.kyou.net.design.bridge;
 
 import com.alibaba.fastjson.JSONObject;
-import com.kyou.net.design.config.RegisterLoginComponentFactory;
+import com.kyou.net.design.factory.RegisterLoginComponentFactory;
 import com.kyou.net.design.pojo.UserInfo;
 import com.kyou.net.design.repo.UserRepository;
 import com.kyou.net.design.util.HttpUtils;

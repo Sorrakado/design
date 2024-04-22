@@ -1,14 +1,11 @@
 package com.kyou.net.design.bridge;
 
-import com.kyou.net.design.config.RegisterLoginComponentFactory;
+import com.kyou.net.design.factory.RegisterLoginComponentFactory;
 import com.kyou.net.design.pojo.UserInfo;
 import com.kyou.net.design.repo.UserRepository;
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.Resource;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Component;
-
-import java.util.Date;
 
 @Component
 public class RegisterLoginByDefault extends AbstractRegisterLoginFunc implements RegisterLoginFuncInterface{

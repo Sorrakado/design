@@ -80,6 +80,7 @@ public class ProductItemService {
 
         AbstractProductItem updatedItems = addItemVisitor.visitor(addItem);
         //再更新缓存
+        //此处可做重试逻辑
         redisCommonProcessor.set("items",updatedItems);
         return (ProductComposite) updatedItems;
     }
@@ -98,4 +99,8 @@ public class ProductItemService {
         redisCommonProcessor.set("items",updatedItems);
         return (ProductComposite) updatedItems;
     }
+    /**
+     * 以上代码未涉及补偿机制及极端场景，仅做示例
+     * 至少要引入MQ进行失败重试，及引入邮件进行人工介入
+     */
 }

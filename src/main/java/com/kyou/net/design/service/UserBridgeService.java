@@ -1,7 +1,7 @@
 package com.kyou.net.design.service;
 
 import com.kyou.net.design.bridge.AbstractRegisterLoginComponent;
-import com.kyou.net.design.config.RegisterLoginComponentFactory;
+import com.kyou.net.design.factory.RegisterLoginComponentFactory;
 import com.kyou.net.design.pojo.UserInfo;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Service;
